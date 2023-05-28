@@ -71,21 +71,17 @@
                 margin-bottom: 4px;
             }
 
-            .input {
-                background-color: var(--text-input-field);
-                border: none;
-                border-radius: 8px;
-                height: 32px;
+            .value {
+                color: var(--very-light-pink);
                 font-size: var(--md);
-                padding: 6px;
-                margin-bottom: 20px;
+                margin: 8px 0 32px 0;
             }
 
-            .primary-button {
-                background-color: var(--hospital-green);
+            .secondary-button {
+                background-color: var(--white);
                 border-radius: 8px;
-                border: none;
-                color: var(--white);
+                border: 1px solid var(--hospital-green);
+                color: var(--hospital-green);
                 width: 100%;
                 cursor: pointer;
                 font-size: var(--md);
@@ -93,12 +89,12 @@
                 height: 48px;
             }
 
-            .primary-button:active {
+            .secondary-button:active {
                 background-color: var(--very-light-pink);
                 color: black;
             }
 
-            .primary-button:hover {
+            .secondary-button:hover {
                 background-color: var(--hover-green);
             }
 
@@ -125,19 +121,21 @@
 
                 <h1 class="title">My account</h1>
 
+                
+                <div class="fields">
+                    <label for="name" class="label">Name</label>
+                    <p class="value">Camila Yokoo</p>
+
+                    <label for="email" class="label">Email address</label>
+                    <p class="value">camilayokoo@gmail.com</p>
+
+                    <label for="password" class="label">Password</label>
+                    <p class="value">********</p>
+                </div>
+
                 <form action="/" class="form">
-                    <div>
-                        <label for="name" class="label">Name</label>
-                        <input type="text" id="name" placeholder="Camila Yokoo" class="input">
 
-                        <label for="email" class="label">Email address</label>
-                        <input type="email" id="email" placeholder="camilayokoo@gmail.com" class="input">
-
-                        <label for="password" class="label">Password</label>
-                        <input type="password" id="password" placeholder="********" class="input input-password">
-                    </div>
-
-                    <input type="submit" value="Create Acount" class="primary-button login-button">
+                    <input type="submit" value="Edit" class="secondary-button login-button">
 
                 </form>
             </div>
